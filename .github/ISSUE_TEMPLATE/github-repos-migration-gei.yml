@@ -34,3 +34,13 @@ body:
         - Mirror
     validations:
       required: true
+  - type: dropdown
+    id: lock_source_repo
+    attributes:
+      label: Lock Source Repository
+      description: Select "Yes" to lock the source repository after migration, or "No" to leave it unlocked.
+      options:
+        - 'Yes'
+        - 'No'
+    validations:
+      required: true
