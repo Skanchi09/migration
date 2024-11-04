@@ -140,7 +140,7 @@ jobs:
             const migrationType = '${{ needs.prepare.outputs.migration-type }}';
             const lockSelection = '${{ fromJson(needs.prepare.outputs.parsed-issue).lock_source_repo }}';
             return migrationType === 'Production' && lockSelection === 'Yes' ? '--lock-source-repo' : '';
-
+      
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
